@@ -1,0 +1,19 @@
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{
+	int y,x;
+	
+	printf("Dame el valor de X: ");
+	scanf("%d",&x);
+	
+	y = ((3)* pow(x,2))+((7)*(x))-((15)); //el pow nos ayuda a elevar una variable y el numero despues de la coma indica hasta que tanto se va a elevar en este caso es al cuadrado
+	
+	
+	printf("El valor de Y es: %d",y);
+	
+	return 0;
+}
