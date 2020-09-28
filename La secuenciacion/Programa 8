@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{
+	float radio, pi, area;
+
+	pi  = 3.1416;
+
+	 printf("Dame el valor del radio: ");
+	  scanf("%f",&radio);
+
+	area = (pi)*pow(radio,2);  //el pow nos ayuda a elevar una variable y el numero despues de la coma indica hasta que tanto se va a elevar
+
+	printf("El area del circulo es: %f",area);
+
+	return 0;
+}
