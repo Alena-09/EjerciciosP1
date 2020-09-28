@@ -1,0 +1,18 @@
+
+#include<stdio.h>
+
+int main()
+{
+	int segundos, distancia, distancia_recorrida;
+	
+	distancia = 300000;
+	
+	printf("Dame el tiempo de recorrido en segundos: ");
+	scanf("%d",&segundos);
+	
+	distancia_recorrida = segundos*distancia;
+	
+	printf("La distancia recorrida fue: %d",distancia_recorrida);
+	
+	return 0;
+}
