@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+
+int main()
+{
+	float pies, yardas, pulgadas, centimetros, metros;
+	// 1 pie = 12 pulgadas, 1 yarda = 3 pies, 1 pulgada = 2.54 cm, 1 m = 100 cm.
+
+	printf("Dame los pies a convertir: ");
+	scanf("%f",&pies);
+
+	yardas =  pies/3;
+
+	pulgadas = pies*12;
+
+	centimetros = pies*30.48;
+
+	metros = pies/3.281;
+
+
+	printf("El equivalente de los pies son en: \n Yardas: %f \n Pulgadas: %f \n Centimetros: %f \n Metros: %f",yardas,pulgadas,centimetros,metros);
+
+	return 0;
+}
