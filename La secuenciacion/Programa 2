@@ -1,0 +1,29 @@
+
+#include<stdio.h>
+
+
+int main()
+{
+	//Usando la funcion scannf se recibe horas y se imprime el equivalente en minutos, segundos y dias
+
+	float horas;
+
+	float minutos, segundos, dia;
+
+
+	printf("Dame las horas que deseas convertir: ");
+	 scanf("%f", &horas);
+
+	segundos = horas*3600; //Para convertir de horas a segundos se multiplica por 3600
+
+	minutos = horas*60; // Para convertir de horas a minutos se multiplica por 60
+
+	dia = horas/24; // Para convertir de horas a dias se divide entre 24
+
+	 printf("Las horas ingresadas fueron %d Y las conversiones son: ",horas);
+	 printf("\n Segundos: %.2f \n Minutos: %.2f \n Dias %.5f",segundos,minutos,dia);
+
+
+
+	return 0;
+}
