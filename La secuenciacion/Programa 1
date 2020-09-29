@@ -1,0 +1,21 @@
+
+
+#include<stdio.h>
+
+int main(){
+
+  float anchura, longitud, costo_metro_cuadrado, areaterreno, costo_total;
+
+
+ anchura = 14;
+ longitud = 22;  // son 308 metros cuadrados
+ costo_metro_cuadrado = 1298;
+ areaterreno = anchura * longitud;
+ costo_total = areaterreno * costo_metro_cuadrado;
+
+   printf("El costo del terreno es %.2f pesos MX",costo_total);
+
+  return 0;
+
+
+}
