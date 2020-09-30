@@ -1,0 +1,32 @@
+
+
+#include<stdio.h>
+
+ int main(){
+
+  float anchura, longitud, costo_metro_cuadrado, areaterreno, costo_total, descuento, costo_descuento;
+
+
+   anchura = 18;
+   longitud = 26;
+   costo_metro_cuadrado = 1978;
+   areaterreno = anchura * longitud;
+   costo_total = areaterreno * costo_metro_cuadrado;
+   descuento = (costo_total * 10) / 100;
+   costo_descuento = (costo_total - descuento);
+
+    if (areaterreno>400) {
+
+      printf("El costo del terreno es %f menos el 10 porciento!, por lo tanto el costo fianl es %f",costo_total , costo_descuento);
+
+   }  else {
+
+       printf("El costo del terreno es %f",costo_total);
+   }
+
+
+
+  return 0;
+
+
+}
