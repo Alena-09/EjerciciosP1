@@ -17,7 +17,7 @@
 
     if (areaterreno>400) {
 
-      printf("El costo del terreno es %f menos el 10 porciento!, por lo tanto el costo fianl es %f",costo_total , costo_descuento);
+      printf("El costo del terreno es %f menos el 10 porciento!, por lo tanto el costo final es %f",costo_total , costo_descuento);
 
    }  else {
 
