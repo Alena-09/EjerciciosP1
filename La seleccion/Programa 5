@@ -1,0 +1,37 @@
+
+#include<stdio.h>
+
+int main() {
+
+   int A, B, C;
+
+   printf("Dame el angulo A del triangulo: ");
+    scanf("%i", &A);
+
+   printf("Dame el angulo B del triangulo: ");
+    scanf("%i", &B);
+
+   printf("Dame el angulo C del triangulo: ");
+    scanf("%i", &C);
+
+   if (A == 90)
+   {
+		printf(" Es un triangulo rectangulo ");
+   }
+   else
+   {
+    	if (B >90 <180)
+		{
+	    	printf(" Es un triangulo obtusangulo ");
+        }
+		else
+		{
+        	if (C <90)
+			{
+		       printf(" Es un triangulo acutangulo ");
+           	}
+   		}
+	}
+
+	return 0;
+}
