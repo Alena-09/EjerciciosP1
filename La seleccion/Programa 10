@@ -1,0 +1,63 @@
+
+#include<stdio.h>
+
+int main()
+{
+	int mes;
+
+   	printf("Dame el numero de mes\n");
+   	scanf("%d",&mes);
+
+
+
+	if(mes==1)
+	{
+		printf("Es Enero"); //use la estructura else if para evitar tener ifs anidados
+	}
+	else if(mes==2)
+	{
+		printf("Es Febrero");
+	}
+	else if(mes==3)
+	{
+		printf("Es Marzo");
+	}
+	else if(mes==4)
+	{
+		printf("Es Abril");
+	}
+	else if(mes==5)
+	{
+		printf("Es Mayo");
+	}
+	else if(mes==6)
+	{
+		printf("Es Junio");
+	}
+	else if(mes==7)
+	{
+		printf("Es Julio");
+	}
+	else if(mes==8)
+	{
+		printf("Es Agosto");
+	}
+	else if(mes==9)
+	{
+		printf("Es Septiembre");
+	}
+	else if(mes==10)
+	{
+		printf("Es Octubre");
+	}
+	else if(mes==11)
+	{
+		printf("Es Noviembre");
+	}
+	else if(mes==12)
+	{
+		printf("Es Diciembre");
+	}
+	
+	return 0;
+}
