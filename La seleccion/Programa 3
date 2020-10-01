@@ -1,0 +1,34 @@
+
+int main () {
+
+  int precio_u, cpedida, costo_total;
+  float descuento, total;
+  char articulo[25] = "pasteles de chocolate"; //Declare la cadena como la sintaxis de un array
+
+
+    precio_u = 230;
+
+    cpedida = 80;
+
+    costo_total = precio_u * cpedida;
+
+    descuento = (costo_total * 15) / 100;
+
+    total = costo_total - descuento;
+
+
+     if (cpedida>50) {
+
+    printf("El costo total de los %s es %i menos el 15 porciento!, por lo tanto el costo final es %.2f pesos", articulo, costo_total , total);
+
+   }  else {
+
+       printf("El costo total de los articulos es %f",costo_total);
+   }
+
+
+
+  return 0;
+
+
+}
