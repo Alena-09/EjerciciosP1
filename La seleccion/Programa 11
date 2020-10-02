@@ -1,0 +1,50 @@
+
+
+#include<stdio.h>
+
+
+int main()
+{
+	int dias;
+    float preciodiario, subtotal, total1, total2, total3, dtotal1, dtotal2, dtotal3;
+
+
+	printf("Dame el precio diario por habitacion");
+	scanf("%f",&preciodiario);
+
+	printf("Dame la cantidad de dias que te vas a hospedar \n");
+        scanf("%i", &dias);
+
+
+
+	subtotal = (preciodiario * dias);
+	dtotal1 = (subtotal *10)/100;
+	dtotal2 = (subtotal *15)/100;
+	dtotal3 = (subtotal *20)/100;
+
+	total1 = (subtotal - dtotal1);
+	total2 = (subtotal - dtotal2);
+	total3 = (subtotal - dtotal3);
+
+
+
+	if(dias>5)
+	{
+		printf("El costo de hospedaje por los dias que te quedas es %.3f pesos, pero tienes 10 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total1);
+	}
+	else if(dias>10) //use la estructura else if para evitar tener ifs anidados
+	{
+		printf("El costo de hospedaje por los dias que te quedas es %.3f pesos, pero tienes 15 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total2);
+	}
+	else if(dias>15)
+	{
+		printf("El costo de hospedaje por los dias que te quedas es %.3f pesos, pero tienes 20 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total3);
+	}
+    else if(dias<=5)
+	{
+		printf("El costo de hospedaje por los dias que te quedas es %.3f pesos", subtotal);
+	}
+
+	return 0;
+
+}
