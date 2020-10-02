@@ -12,15 +12,15 @@ int main()
 	printf("Dame el precio unitario de los trajes \n");
         scanf("%f", &preciouni);
 
-	printf("Dame la cantidad de trajes que quieres");
+	printf("Dame la cantidad de trajes que quieres \n");
 	scanf("%i",&cantidad);
 
 
 	subtotal = (preciouni * cantidad);
-	dtotal1 = (subtotal *50)/100;
-	dtotal2 = (subtotal *55)/100;
-	dtotal3 = (subtotal *60)/100;
-	dtotal4 = (subtotal*65)/100;
+	dtotal1 = (subtotal *50.0)/100;
+	dtotal2 = (subtotal *55.0)/100;
+	dtotal3 = (subtotal *60.0)/100;
+	dtotal4 = (subtotal*65.0)/100;
 
 	total1 = (subtotal - dtotal1);
 	total2 = (subtotal - dtotal2);
