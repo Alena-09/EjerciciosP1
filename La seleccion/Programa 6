@@ -1,0 +1,49 @@
+
+#include<stdio.h>
+
+
+
+int main()
+{
+	int cantidad;
+    float preciouni, subtotal, total1, total2, total3, total4, dtotal1, dtotal2, dtotal3, dtotal4;
+
+
+	printf("Dame el precio unitario de los trajes \n");
+        scanf("%f", &preciouni);
+
+	printf("Dame la cantidad de trajes que quieres");
+	scanf("%i",&cantidad);
+
+
+	subtotal = (preciouni * cantidad);
+	dtotal1 = (subtotal *50)/100;
+	dtotal2 = (subtotal *55)/100;
+	dtotal3 = (subtotal *60)/100;
+	dtotal4 = (subtotal*65)/100;
+
+	total1 = (subtotal - dtotal1);
+	total2 = (subtotal - dtotal2);
+	total3 = (subtotal - dtotal3);
+
+
+	if(cantidad==1)
+	{
+		printf("El costo del traje es: %.3f pesos, pero tiene 50 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total1);
+	}
+	else if(cantidad==2) //use la estructura else if para evitar tener ifs anidados
+	{
+		printf("El costo de los trajes es: %.3f pesos, pero tiene 55 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total2);
+	}
+	else if(cantidad==3)
+	{
+		printf("El costo de los trajes es: %.3f pesos, pero tiene 60 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total3);
+	}
+	else if(cantidad>4)
+	{
+		printf("El costo de los trajes es: %.3f pesos, pero tiene 65 porciento de descuento, por lo que el total a pagar es: %.3f pesos", subtotal, total4);
+	}
+
+	return 0;
+
+}
