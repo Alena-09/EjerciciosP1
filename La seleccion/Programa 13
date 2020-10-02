@@ -1,0 +1,41 @@
+
+#include<stdio.h>
+
+ int main() {
+
+ int a, b, c, d, e, f;
+
+ float x, y;
+
+  printf("Dame el valor de a: \n");
+   scanf("%i",&a);
+
+  printf("Dame el valor de b: \n");
+   scanf("%i",&b);
+
+  printf("Dame el valor de c: \n");
+   scanf("%i",&c);
+
+  printf("Dame el valor de d: \n");
+   scanf("%i",&d);
+
+ printf("Dame el valor de e: \n");
+   scanf("%i",&e);
+
+  printf("Dame el valor de f: \n");
+   scanf("%i",&f);
+
+
+  x= ((a*f)-(c*d))/((a*e)-(b*d));
+  y= ((c*e)-(b*f))/((a*e)-(b*d));
+
+  if (a==0 & b==0) {
+
+    printf("ERROR NO TIENE SOLUCION");
+
+  } else {
+       printf("El valor de X es: %f y el valor de Y es: %f", x ,y);
+  }
+
+ return 0;
+ }
