@@ -9,10 +9,10 @@ int main()
     float preciodiario, subtotal, total1, total2, total3, dtotal1, dtotal2, dtotal3;
 
 
-	printf("Dame el precio diario por habitacion");
+	printf("Dame el precio diario por habitacion: \n");
 	scanf("%f",&preciodiario);
 
-	printf("Dame la cantidad de dias que te vas a hospedar \n");
+	printf("Dame la cantidad de dias que te vas a hospedar: \n");
         scanf("%i", &dias);
 
 
