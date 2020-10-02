@@ -1,0 +1,62 @@
+
+#include<stdio.h>
+
+
+int main()
+{
+	int dias;
+    float angulo11, angulo21, angulo31, angulo12, angulo22, angulo32,lado11, lado21, lado31, lado12, lado22, lado32;
+
+
+	printf("Dame el angulo 1 del primer triangulo ");
+	scanf("%f",&angulo11);
+
+	printf("Dame el angulo 2 del primer triangulo ");
+	scanf("%f",&angulo21);
+
+	printf("Dame el angulo 3 del primer triangulo ");
+	scanf("%f",&angulo31);
+
+	printf("Dame la medida del lado 1 del primer triangulo ");
+	scanf("%f",&lado11);
+
+	printf("Dame la medida del lado 2 del primer triangulo ");
+	scanf("%f",&lado21);
+
+	printf("Dame la medida del lado 3 del primer triangulo ");
+	scanf("%f",&lado31);
+
+	printf("Dame el angulo 1 del segundo triangulo ");
+	scanf("%f",&angulo12);
+
+	printf("Dame el angulo 2 del segundo triangulo ");
+	scanf("%f",&angulo22);
+
+	printf("Dame el angulo 3 del segundo triangulo ");
+	scanf("%f",&angulo32);
+
+	printf("Dame la medida del lado 1 del segundo triangulo ");
+	scanf("%f",&lado12);
+
+	printf("Dame la medida del lado 2 del segundo triangulo ");
+	scanf("%f",&lado22);
+
+	printf("Dame la medida del lado 3 del segundo triangulo ");
+	scanf("%f",&lado32);
+
+
+
+
+
+	if(lado11 = lado12, lado11 = lado32, angulo11 = angulo12, angulo11 = angulo32)
+	{
+		printf("Es un triangulo congruente por que tiene dos lados y dos angulos correspondiente iguales");
+	}
+	if(lado11 != lado12, lado11 != lado32, angulo11 != angulo12, angulo11 != angulo32)
+    {
+      printf("NO es un triangulo congruente por que no tiene dos lados y angulos correspondiente iguales");
+	}
+
+
+	return 0;
+}
