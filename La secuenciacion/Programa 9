@@ -1,0 +1,41 @@
+
+
+#include<stdio.h>
+#include <math.h>
+ int main () {
+
+   float xl, yl, wl, zl, b1, b2, xdos, y2, x3;
+
+
+    printf("Dame el valor de x: \n");
+      scanf("%f", &xl);
+
+    printf("Dame el valor de y: \n");
+      scanf("%f", &yl);
+
+    printf("Dame el valor de w: \n");
+      scanf("%f", &wl);
+
+    printf("Dame el valor de z: \n");
+      scanf("%f", &zl);
+
+    printf("Dame el valor de b: \n");
+      scanf("%f", &b1);
+
+    float   f, fl, ff;
+
+    xdos = pow(xl,2);
+    y2 = pow(yl,2);
+    b2 = pow(b1,3.0/4);
+    x3 = pow(xl,1.0/2);
+
+    f = (4*xdos*(y2))*(12*zl*wl);
+    fl = pow(f,2);
+    ff = (fl/((4*x3))/b2);
+
+    printf("El valor de F es: %.4f" , ff);
+
+
+
+  return 0;
+ }
