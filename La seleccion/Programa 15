@@ -1,0 +1,42 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+int main()
+{
+      char medida;
+      float grados, caf, facen;
+
+
+      printf("Dime que quieres convertir (Selecciona un numero): 1.-grados Centigrados a Fahrenheit\n 2.-grados Fahrenheit a Centigrados \n");
+        scanf("%s",&medida);
+
+
+      printf("Dame los grados que quieres convertir ");
+      scanf("%f",&grados);
+
+	  caf = ((9.0/5)*grados)+32;
+
+      facen = ((grados - 32)*(5.0/9));
+
+
+
+      switch (medida) {
+
+        case '1':
+                //Centigrados a Fahrenheit
+                printf("\nLos grados centigrados convertidos a Fahrenheit son: %f grados \n", caf);
+                break;
+        case '2':
+                //Fahrenheit a Centigrados
+                printf("\nLos grados Fahrenheit convertidos a Centigrados son: %f grados\n", facen);
+                break;
+
+        default:
+                printf("\nERROR");
+}
+system("PAUSE");
+return 0;
+}
