@@ -1,0 +1,67 @@
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{
+
+	float t1, t2, t3, t4, ht, ch, he, sueldo1, sueldo2, sueldo3, sueldo4, sueldog;
+    char tipo;
+	char name[48];
+
+	printf("Dame el nombre del empleado: \n");
+	gets(name);
+
+	printf("Dame el tipo de empleado (selecciona un numero): \n 1.- Tipo1 \n 2.- Tipo2 \n 3.- Tipo3\n 4.- Tipo4 ");
+      scanf("%s",&tipo);
+
+	printf("Dame las horas trabajadas: \n ");
+	scanf("%f",&ht);
+
+	printf("De las horas trabajadas dame las horas extras: \n ");
+	scanf("%f",&he);
+
+	printf("Dame la cuota por hora: \n ");
+	scanf("%f",&ch);
+
+	sueldog = (ht * ch);
+	sueldo1 = ((ht-he)* ch)+((1.5*ch)*he);
+	sueldo2 = ((ht-he) * ch)+((2*ch)*he);
+	sueldo3 = ((ht-he) * ch) +((2.5*ch)*he);
+	sueldo4 = ((ht-he) * ch) +((3*ch)*he);          //use un if, if else y dentro de este if else un switch para no tener tantos if anidados y que el codigo sea menos confuso
+
+	if (ht<=40){
+        printf("Las horas trabajadas son 40 o menos de 40, el suelo del empleado es: %.3f pesos ",sueldog);
+
+	} else if (ht>40) {
+
+	 switch (tipo) {
+
+        case '1':
+                //Tipo1
+                printf("\nEl sueldo a pagar para el tipo de empleado 1 es: %.3f pesos\n", sueldo1);
+                break;
+        case '2':
+                //Tipo2
+                printf("\nEl sueldo a pagar para el tipo de empleado 2 es: %.3f pesos\n", sueldo2);
+                break;
+        case '3':
+                //Tipo 3
+                printf("\nEl sueldo a pagar para el tipo de empleado 3 es: %.3f pesos\n", sueldo3);
+                break;
+
+        case '4':
+                //Tipo4
+                printf("\nEl sueldo a pagar para el tipo de empleado 4 es: %.3f pesos\n", sueldo4);
+                break;
+
+
+        default:
+                printf("\nERROR");
+}
+	}
+system("PAUSE");
+
+	return 0;
+}
