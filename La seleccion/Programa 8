@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+
+int main()
+{
+
+    float anguloa, angulob;
+
+
+	printf("Dame el angulo A de la base del trapecio: ");
+	scanf("%f",&anguloa);
+
+	printf("Dame el angulo B de la base del trapecio: ");
+	scanf("%f",&angulob);
+
+
+	if(anguloa == angulob)
+	{
+		printf("Es un trapecio isoceles por los dos angulos de la base son iguales");
+	}
+	else {
+      printf("NO es un trapecio isoceles por los dos angulos de la base son iguales");
+	}
+
+
+	return 0;
+}
