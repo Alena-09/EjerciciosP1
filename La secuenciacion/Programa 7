@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+
+int main()
+{
+    float costo, utilidad, impuesto, precio;
+
+    char producto[40];
+
+    printf("Ingresa el nombre del producto:");
+    gets(producto);   //use la funcion gets para admitir cadenas con espacios y especifique el numero de caracteres admitidos
+
+    printf("Dame el costo del producto:");
+    scanf("%f", &costo);
+
+    utilidad= costo*1.5;
+    precio=costo+utilidad;
+    impuesto= precio*.15;
+
+    printf("La utilidad del producto es del 150 porciento, que son %.3f pesos\n", utilidad);
+
+    printf("El precio de venta es de %.3f pesos\n", precio);
+
+    printf("El impuesto sobre el precio del producto es de %.3f pesos", impuesto);
+
+
+
+
+
+    return 0;
+}
