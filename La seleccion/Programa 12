@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+int main()
+{
+      char origen;
+      float costo, prevenimp1, prevenimp2, prevenimp3;
+
+
+
+      printf("Dame el costo del auto: ");
+      scanf("%f",&costo);
+
+      printf("Dame el origen del auto (selecciona un numero): \n 1.- Alemania \n 2.- Japon \n 3.- Italia\n ");
+      scanf("%s",&origen);
+
+	  prevenimp1 = ((costo * 20)/100);
+      prevenimp2 = (costo * 30)/100;
+      prevenimp3 = (costo * 15)/100;
+
+
+      switch (origen) {
+
+        case '1':
+                //origen=Alemania
+                printf("\nEl impuesto es del 20 porciento y su precio de venta incluyendo el impuesto es: %.3f pesos\n", prevenimp1);
+                break;
+        case '2':
+                //origen=Japon
+                printf("\nEl impuesto es del 30 porciento y su precio de venta incluyendo el impuesto es: %.3f pesos\n", prevenimp2);
+                break;
+        case '3':
+                //origen=Italia
+                printf("\nEl impuesto es del 15 porciento y su precio de venta incluyendo el impuesto es: %.3f pesos\n", prevenimp3);
+                break;
+
+        default:
+                printf("\nERROR");
+}
+    system("PAUSE");
+      return 0;
+      
+}
