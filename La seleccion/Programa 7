@@ -1,0 +1,60 @@
+
+#include<stdio.h>
+
+
+int main()
+{
+
+    float ang1_1, ang1_2, ang1_3, ang2_1, ang2_2, ang2_3;
+    float lad1_1, lad1_2, lad1_3, lad2_1, lad2_2, lad2_3;
+
+
+	printf("Dame el angulo 1 del primer triangulo ");
+	scanf("%f",&ang1_1);
+
+	printf("Dame el angulo 2 del primer triangulo ");
+	scanf("%f",&ang1_2);
+
+	printf("Dame el angulo 3 del primer triangulo ");
+  	scanf("%f",&ang1_3);
+
+	printf("Dame la medida del lado 1 del primer triangulo ");
+   	scanf("%f",&lad1_1);
+
+	printf("Dame la medida del lado 2 del primer triangulo ");
+	  scanf("%f",&lad1_2);
+
+	printf("Dame la medida del lado 3 del primer triangulo ");
+  	scanf("%f",&lad1_3);
+
+	printf("Dame el angulo 1 del segundo triangulo ");
+	  scanf("%f",&ang2_1);
+
+	printf("Dame el angulo 2 del segundo triangulo ");
+	  scanf("%f",&ang2_2);
+
+	printf("Dame el angulo 3 del segundo triangulo ");
+	  scanf("%f",&ang2_3);
+
+	printf("Dame la medida del lado 1 del segundo triangulo ");
+	  scanf("%f",&lad2_1);
+
+	printf("Dame la medida del lado 2 del segundo triangulo ");
+	  scanf("%f",&lad2_2);
+
+	printf("Dame la medida del lado 3 del segundo triangulo ");
+	  scanf("%f",&lad2_3);
+                                 //Use el doble amperson porque es el operador que indica el logic AND y con este hacemos la comparativa y tambien nos da una vista menos saturada del codigo
+
+	if(lad1_1 == lad2_1 && lad1_2 == lad2_2 && lad1_3 == lad2_3 && ang1_1 == ang2_1 && ang1_2 == ang2_2 && ang1_3 == ang2_3)
+	{
+		  printf("Es un triangulo congruente por que sus lados y angulos correspondientes son iguales");
+
+	}
+	if(lad1_1 != lad2_1 && lad1_2 != lad2_2 && lad1_3 != lad2_3 && ang1_1 != ang2_1 && ang1_2 != ang2_2 && ang1_3 != ang2_3)
+    {
+      printf("NO es un triangulo congruente por que sus lados y angulos no son iguales");
+	}
+
+	return 0;
+}
