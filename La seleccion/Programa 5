@@ -20,7 +20,7 @@ int main() {
    }
    else
    {
-    	if (B >90 <180)
+    	if (B >90 && B<180)
 		{
 	    	printf(" Es un triangulo obtusangulo ");
         }
