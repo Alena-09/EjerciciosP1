@@ -1,0 +1,48 @@
+
+	#include<stdio.h>
+#include<math.h>
+int main () {
+
+
+	float num1, num2, num3, num4;
+	
+	
+	printf("Dame el primer valor: ");
+	scanf("%f",&num1);
+	
+	printf("Dame el segundo valor: ");
+	scanf("%f",&num2);
+	
+	printf("Dame el tercer valor: ");
+	scanf("%f",&num3);
+	
+	printf("Dame el cuarto valor: ");
+	scanf("%f",&num4);
+	                               //Use el doble amperson porque es el operador que indica el logic AND y con este hacemos la comparativa y tambien nos da una vista menos saturada del codigo
+	
+	if(num1 != num2 && num1 != num3 && num1 != num4 && num2 != num3 && num2 != num4 && num3 != num4)
+	{
+		if(num1 > num2 && num1 > num3 && num1 > num4)
+		{
+			printf("El numero mayor fue el primer valor ingresado y es: %.2f",num1);
+		}
+		else if(num2 > num3 && num2 > num4)
+		{
+			printf("El numero mayor fue el segundo valor ingresado y es: %.2f",num2);
+		}
+		else if(num3 > num4)
+		{
+			printf("El numero mayor fue el tercer valor ingresado y es: %.2f",num3);
+		}
+		else
+		{
+			printf("El numero mayor fue el cuarto valor ingresado y es: %.2f",num4);
+		}
+	}
+	else
+	{
+		printf("Hay numeros iguales intentalo de nuevo");
+	}
+		
+	return 0;
+}
